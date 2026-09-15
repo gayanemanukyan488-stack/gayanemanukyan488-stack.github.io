@@ -48,18 +48,18 @@
             padding-bottom: 8px;
             margin-bottom: 20px;
         }
-        .skills-grid {
+        .skills-grid, .education-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
         }
-        .skill-card {
+        .card {
             background: #f8f9fa;
             padding: 15px;
             border-radius: 8px;
             border-left: 4px solid #2a5298;
         }
-        .skill-card h3 {
+        .card h3 {
             font-size: 1.1rem;
             margin-bottom: 5px;
             color: #2a5298;
@@ -90,7 +90,7 @@
         }
         .contact-btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 22px;
             background-color: #2a5298;
             color: white;
             text-decoration: none;
@@ -127,21 +127,34 @@
         <section id="skills">
             <h2>Մասնագիտական Հմտություններ</h2>
             <div class="skills-grid">
-                <div class="skill-card">
+                <div class="card">
                     <h3>Web Development</h3>
                     <p>HTML5, CSS3 (Flexbox/Grid), JavaScript, PHP</p>
                 </div>
-                <div class="skill-card">
+                <div class="card">
                     <h3>Networks & Security</h3>
                     <p>Cisco Packet Tracer, IP Address/Subnetting, Network Protocols, Cryptography</p>
                 </div>
-                <div class="skill-card">
+                <div class="card">
                     <h3>Databases</h3>
                     <p>SQL, Relational Database Design, ER Diagrams</p>
                 </div>
-                <div class="skill-card">
+                <div class="card">
                     <h3>Design & Tools</h3>
                     <p>CorelDRAW, Photoshop, VS Code, AI Tools (NotebookLM, Claude, Perplexity, Gemini)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Կրթություն -->
+        <section id="education">
+            <h2>Կրթություն</h2>
+            <div class="education-grid">
+                <div class="card">
+                    <h3>ՎՊՀ</h3>
+                    <p><strong>Մասնագիտություն՝</strong> Կիրառական մաթեմատիկա և ֆիզիկա</p>
+                    <p><strong>Որակավորում՝</strong> Կիրառակամ մաթեմատիկա և ֆիզիկա բակալավր</p>
+                    <p><strong>Տարեթվեր՝</strong>2009-2013</p>
                 </div>
             </div>
         </section>
@@ -169,7 +182,8 @@
         <section id="contact">
             <h2>Կապ Ինձ Հետ</h2>
             <div class="contact-links">
-                <a href="mailto:your-email@gmail.com" class="contact-btn">Էլ․ փոստ</a>
+                <a href="CV.pdf" download class="contact-btn">Ներբեռնել CV (PDF)</a>
+                <a href="gayanemanukyan488@gmail.com" class="contact-btn">Էլ․ փոստ</a>
                 <a href="https://github.com/gayanemanukyan" target="_blank" class="contact-btn">GitHub Profile</a>
             </div>
         </section>
